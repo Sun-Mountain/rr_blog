@@ -70,6 +70,10 @@ main {
 	padding: 25px;
 }
 
+.show-container {
+	padding: 0 0 50px 0;
+}
+
 .actions {
 	display: flex;
 	flex-direction: row;
@@ -87,5 +91,55 @@ main {
 		display: inline-block;
 		list-style: none;
 		padding: 0 0 0 30px;
+	}
+}
+
+.comment-form {
+	width: 100%;
+}
+
+.comment-section {
+	padding: 25px 75px;
+}
+
+.comment-single {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 35px 0;
+	padding: 0 50px;
+
+	a {
+		font-size: 14px;
+	}
+}
+
+.comment-text {
+	color: #c52233;
+}
+
+.delete-btn-cont {
+	a {
+		background-color: #c52233;
+		border-radius: 5px;
+		color: #ffffff;
+		padding: 10px;
+	}
+}
+
+.new-post {
+	padding: 30px;
+
+	input {
+		width: 100%;
+	}
+
+	.input-cont {
+		margin: 50px 0;
+	}
+
+	textarea {
+		min-height: 200px;
+		width: 100%;
 	}
 }

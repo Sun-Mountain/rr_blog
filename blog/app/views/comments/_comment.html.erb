@@ -1,14 +1,11 @@
-<div class="">
-    <article class="">
-        <div class="">
-            <div class="">
-                <p>
-                    <strong><%= comment.name %>: </strong>
-                    <%= comment.comment %>
-                </p>
-            </div>
-        </div>
+<div class="comment-single">
+    <div class="">
+            <strong><%= comment.name %>: </strong>
+            <%= comment.comment %>
+    </div>
 
+    <div class="delete-btn-cont">
         <%= link_to 'Delete', [comment.post, comment], method: :delete, class: "", data: { confirm: "Are you sure?" } %>
-    </article>
+    </div>
 </div>
+<hr />

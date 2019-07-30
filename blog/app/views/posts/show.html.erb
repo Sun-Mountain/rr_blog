@@ -1,20 +1,12 @@
 <% content_for :page_title, @post.title %>
 
-<section class="">
+<section>
 
     <div class="post-content">
         <%= @post.content %>
     </div>
 
-    <hr />
-
-
     <div class="actions">
-        <div class="">
-            <p class="">
-                <strong>Post Actions:</strong>
-            </p>
-        </div>
         <div  class="">
             <ul>
                 <li><%= link_to "Edit", edit_post_path(@post), class: "" %></li>
@@ -24,14 +16,19 @@
     </div>
 </section>
 
-<section class="">
+<hr />
+
+<section class="comment-section">
     <div class="">
-        <h2 class=""><strong><%= @post.comments.count %></strong> Comments</h2>
+
+        <!-- Make if/else statement for # of comments -->
+
+        <h3 class="comment-text"><strong><%= @post.comments.count %></strong> Comments</h3>
+
         <%= render @post.comments %>
 
-        <div class="">
-            <hr />
-            <h3 class="">Mmm, Whatchya say?</h3> 
+        <div class="comment-form-cont">
+            <h3 class="comment-text">Mmm, Whatchya say?</h3> 
             <%= render 'comments/form' %>
         </div>
     </div>
