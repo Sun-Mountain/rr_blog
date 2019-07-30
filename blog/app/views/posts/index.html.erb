@@ -1,18 +1,16 @@
-<% content_for :page_title, "Index" %>
+<% content_for :page_title, "My Ruby Blog" %>
 
-<section class="">
-    <div class="">
+<section>
+    <div>
         <% @posts.each do |post| %>
-            <div class="">
+            <div class="post-show">
                 <div class="">
                     <div class="">
-                        <div class="">
-                            <p class=""><%= link_to post.title, post %></p>
-                        </div>
+                        <p class=""><%= link_to post.title, post %></p>
                     </div>
-                    <div class="">
-                        <%= post.content %>
-                    </div>
+                </div>
+                <div class="">
+                    <%= post.content %>
                 </div>
             </div>
         <% end %>

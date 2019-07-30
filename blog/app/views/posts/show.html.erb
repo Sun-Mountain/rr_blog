@@ -1,31 +1,26 @@
 <% content_for :page_title, @post.title %>
 
 <section class="">
-    <div class="">
-    <nav class="">
-        <!-- Left side -->
+
+    <div class="post-content">
+        <%= @post.content %>
+    </div>
+
+    <hr />
+
+
+    <div class="actions">
         <div class="">
             <p class="">
-                <strong>Actions</strong>
+                <strong>Post Actions:</strong>
             </p>
         </div>
-
-        <!-- Right side -->
         <div  class="">
-            <p class="">
-                <%= link_to "Edit", edit_post_path(@post), class: "" %>
-            </p>
-            <p class="">
-                <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "" %>
-            </p>
+            <ul>
+                <li><%= link_to "Edit", edit_post_path(@post), class: "" %></li>
+                <li><%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: "" %></li>
+            </ul>
         <div>
-        </nav>
-        <hr />
-
-        <div class="">
-            <%= @post.content %>
-        </div>
-
     </div>
 </section>
 
