@@ -128,18 +128,50 @@ main {
 }
 
 .new-post {
-	padding: 30px;
+	margin: 20px 40px;
 
 	input {
+		font-size: 16px;
 		width: 100%;
 	}
 
 	.input-cont {
-		margin: 50px 0;
+		margin: 5px 0;
 	}
 
 	textarea {
 		min-height: 200px;
 		width: 100%;
 	}
+}
+
+.new-post-btn-cont {
+	display: flex;
+	justify-content: center;
+}
+
+.new-post-btn {
+	background-color: #c52233;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 16px;
+	margin: 0 10px 25px 10px;
+	padding: 10px;
+}
+
+.new-post-btn:hover {
+	color: #efc2c7;
+}
+
+.comment-form {
+	margin: 10px;
+	width: 100%;
+}
+
+footer {
+	background-color: #c52233;
+	color: #ffffff;
+	margin: 55px 0 0 0;
+	padding: 15px 25px;
+	text-align: right;
 }

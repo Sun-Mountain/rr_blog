@@ -1,16 +1,16 @@
-<div class="">
 <%= simple_form_for @post do |f| %>
-  <div class="">
+  <div class="new-post">
     <div class="">
       <%= f.input :title, input_html: { class: '' }, wrapper: false, label_html: { class: '' } %>
     </div>
   </div>
 
-  <div class="">
+  <div class="new-post">
     <div class="">
       <%= f.input :content, input_html: { class: '' }, wrapper: false, label_html: { class: '' }  %>
     </div>
   </div>
-  <%= f.button :submit, class: "" %>
+  <div class="new-post-btn-cont">
+    <%= f.button :submit, class: "new-post-btn" %>
+  </div>
 <% end %>
-</div>
