@@ -14,7 +14,7 @@ group :development do
   gem 'sqlite3'
 end
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -80,6 +80,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bulma-rails', '~> 0.7.5'
 
 # Simple Forms
-gem 'simple_form', '~> 4.1'
+gem 'simple_form', '~> 5.0'
 
 # 
